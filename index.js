@@ -5,15 +5,16 @@ function currentLine(line) {
 
   const numbersAndNames = []
 
-  for (let i = 0, l = line.length; i < l; i++)
+  for (let i = 0, l = line.length; i < l; i++) {
+    numbersAndNames.push(`${i + 1}. ${line[i]}`)
+  }
 }
 
 
 
-function takeANumber(line, name) { 
+function takeANumber(line, name) {
   line.push(name)
 
   return `Welcome, ${name}. You are number ${line.length} in line.`
-  
-}
 
+}
