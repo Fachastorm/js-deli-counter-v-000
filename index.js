@@ -1,6 +1,6 @@
 function currentLine(line) {
   if (!line.length) {
-    return "The line is currently is empty."
+    return "The line is currently empty."
   }
 
   const numbersAndNames = []
